@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*-image: url('images/fondo1.png');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.959);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    margin-bottom: -65px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.login-btn, .register-btn, .forgot-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.login-btn:hover, .register-btn:hover, .forgot-btn:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.forgot-password, .register-link, .login-link {
+    display: block;
+    margin-top: 15px;
+    color: #0f7e66;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.forgot-password:hover, .register-link:hover, .login-link:hover {
+    text-decoration: underline;
+}
+
+
+
+  

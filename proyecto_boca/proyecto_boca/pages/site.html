@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoBoca - Site</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">ProyectoBoca</div>
+            <div class="user-info">
+                <span class="username">Administrator</span>
+                <span class="user-type">(Admin)</span>
+                <button class="logout-btn" id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="contest.html">Contest</a></li>
+            <li class="active"><a href="site.html">Site</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="answer.html">Answer</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="options.html">Options</a></li>
+            <li><a href="export.html">Export</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="card">
+            <div class="card-title">Configuración del Sitio</div>
+            
+            <div class="form-group">
+                <label for="site-number">Site number: (local site)</label>
+                <input type="text" id="site-number">
+            </div>
+            
+            <div class="form-group">
+                <label for="site-name">Name:</label>
+                <input type="text" id="site-name" value="S10">
+            </div>
+            
+            <div class="form-group">
+                <label>Start date (contest=1513100 BRT - 24/Mar/2025):</label>
+                <div class="date-inputs">
+                    <input type="text" placeholder="hh" value="15" style="width: 50px;">
+                    <span>:</span>
+                    <input type="text" placeholder="mm" value="13" style="width: 50px;">
+                    <input type="text" placeholder="dd" value="24" style="width: 50px;">/
+                    <input type="text" placeholder="mm" value="03" style="width: 50px;">/
+                    <input type="text" placeholder="yyyy" value="2025" style="width: 80px;">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="duration">Duration (contest=62523):</label>
+                <input type="number" id="duration" value="6222">
+            </div>
+            
+            <div class="form-group">
+                <label for="stop-answering">Stop answering (contest=285):</label>
+                <input type="number" id="stop-answering" value="285">
+            </div>
+            
+            <div class="form-group">
+                <label for="stop-scoreboard">Stop scoreboard (contest=240):</label>
+                <input type="number" id="stop-scoreboard" value="240">
+            </div>
+            
+            <div class="form-group">
+                <label for="judged-classes">Classes that will be judged here (comma sep):</label>
+                <input type="text" id="judged-classes">
+            </div>
+            
+            <div class="form-group">
+                <label for="treated-tasks">Tasks that will be treated here (comma sep):</label>
+                <input type="text" id="treated-tasks">
+            </div>
+            
+            <div class="form-group">
+                <label for="chief-judge">Username of the chief judge (if any):</label>
+                <input type="text" id="chief-judge">
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="active" checked> Active
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="automatic"> Automatic
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="global-score"> Global score
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="autojudge"> Autojudge (without human interactions) <- experimental
+                </label>
+            </div>
+            
+            <p>Logins are: enabled</p>
+            
+            <div class="form-group">
+                <label for="score-level">Score level:</label>
+                <input type="number" id="score-level" value="3" min="1" max="5">
+            </div>
+            
+            <div class="stats">
+                <p>Number of classes: 0</p>
+                <p>Number of Runs: 0</p>
+                <p>Number of Tasks: 0</p>
+            </div>
+            
+            <div class="actions">
+                <button class="btn">Send</button>
+                <button class="btn">Start Now</button>
+                <button class="btn">Stop Now</button>
+                <button class="btn">Restore fields</button>
+            </div>
+            
+            <div class="actions">
+                <button class="btn">Logout all users</button>
+                <button class="btn">Disable logins</button>
+                <button class="btn">Enable logins</button>
+            </div>
+            
+            <div class="actions">
+                <button class="btn btn-danger">Delete ALL site classes</button>
+                <button class="btn btn-danger">Delete ALL site runs</button>
+                <button class="btn btn-danger">Delete ALL site tasks</button>
+                <button class="btn btn-danger">Delete ALL site blocks</button>
+            </div>
+            
+            <div class="form-group">
+                <label>Import file:</label>
+                <input type="file" id="import-file">
+                <button class="btn">Import</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

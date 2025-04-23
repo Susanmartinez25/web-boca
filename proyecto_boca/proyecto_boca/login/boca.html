@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOCA Login</title>
+    <link rel="stylesheet" href="boca.css">
+</head>
+<body>
+    <!-- Contenedor del menú -->
+<div id="menu-container"></div>
+
+<!-- Script que lo carga -->
+<script src="../js/loadNav.js"></script>
+
+  
+
+    <!-- Formulario de inicio de sesión -->
+    <div class="login-container" id="login-box">
+        <div class="logo-container">
+            <img src="images/boca.png.png" alt="Logo BOCA">
+        </div>
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Nombre de usuario">
+
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Contraseña">
+            <span class="toggle-password" onclick="togglePassword()">👁️</span>
+        </div>
+
+        <p class="error-message" id="error">Usuario o contraseña incorrectos</p>
+
+        <button class="login-btn" onclick="validateLogin()">Iniciar sesión</button>
+
+        <a href="#" class="forgot-password" onclick="showForgotPassword()">¿Olvidaste tu contraseña?</a>
+        <a href="#" class="register-link" onclick="showRegister()">Crear cuenta</a>
+    </div>
+
+    <!-- Formulario de registro -->
+    <div class="login-container" id="register-box" style="display: none;">
+        <h2>Crear Cuenta</h2>
+        <input type="text" id="new-username" placeholder="Nuevo usuario">
+        <div class="password-container">
+            <input type="password" id="new-password" placeholder="Nueva contraseña">
+            <span class="toggle-password" onclick="toggleNewPassword()">👁️</span>
+        </div>
+        <button class="register-btn" onclick="registerUser()">Registrar</button>
+        <a href="#" class="register-link" onclick="showLogin()">Volver a Iniciar sesión</a>
+    </div>
+
+    <!-- Formulario de recuperación de contraseña -->
+    <div class="login-container" id="forgot-password-box" style="display: none;">
+        <div class="logo-container">
+            <img src="images/boca.png.png" alt="Logo BOCA">
+        </div>
+        <h2>¿Olvidaste tu Contraseña?</h2>
+        <p>Por favor, introduce tu nombre de usuario para recuperar tu contraseña.</p>
+        <input type="text" id="forgot-username" placeholder="Nombre de usuario">
+        <button class="forgot-btn" onclick="recoverPassword()">Recuperar Contraseña</button>
+        <a href="#" class="login-link" onclick="showLogin()">Volver a Iniciar sesión</a>
+        <a href="#" class="register-link" onclick="showRegister()">Crear cuenta</a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="boca.js"></script>
+</body>
+</html>
+
+
+
+
