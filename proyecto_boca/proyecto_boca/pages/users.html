@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoBoca - Users</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">ProyectoBoca</div>
+            <div class="user-info">
+                <span class="username">Administrator</span>
+                <span class="user-type">(Admin)</span>
+                <button class="logout-btn" id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="contest.html">Contest</a></li>
+            <li><a href="site.html">Site</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="answer.html">Answer</a></li>
+            <li class="active"><a href="users.html">Users</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="options.html">Options</a></li>
+            <li><a href="export.html">Export</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="card">
+            <div class="card-title">Gestión de Usuarios</div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User #</th>
+                            <th>Site</th>
+                            <th>Username</th>
+                            <th>ICPC ID</th>
+                            <th>Type</th>
+                            <th>Fullname</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1000</td>
+                            <td>1</td>
+                            <td>Admin</td>
+                            <td></td>
+                            <td>Admin</td>
+                            <td>Administrator</td>
+                            <td>
+                                <button class="btn btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="form-group">
+                <label>Import file:</label>
+                <input type="file" id="import-file">
+                <button class="btn">Import</button>
+                <button class="btn">Clear</button>
+            </div>
+            
+            <div class="card-title">Crear/Editar Usuario</div>
+            
+            <div class="form-group">
+                <label for="user-site-number">User site Number:</label>
+                <input type="text" id="user-site-number">
+            </div>
+            
+            <div class="form-group">
+                <label for="user-number">User Number:</label>
+                <input type="text" id="user-number">
+            </div>
+            
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+            </div>
+            
+            <div class="form-group">
+                <label for="icpc-id">ICPC ID:</label>
+                <input type="text" id="icpc-id">
+            </div>
+            
+            <div class="form-group">
+                <label for="user-type">Type:</label>
+                <select id="user-type">
+                    <option value="team">Team</option>
+                    <option value="judge">Judge</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="enabled">Enabled:</label>
+                <select id="enabled">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="multilogin">MultiLogin (local teams should be set to No):</label>
+                <select id="multilogin">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="user-fullname">User Full Name:</label>
+                <input type="text" id="user-fullname">
+            </div>
+            
+            <div class="form-group">
+                <label for="user-description">User Description:</label>
+                <textarea id="user-description" rows="3"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="user-ip">User IP:</label>
+                <input type="text" id="user-ip">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+            </div>
+            
+            <div class="form-group">
+                <label for="retype-password">Retype Password:</label>
+                <input type="password" id="retype-password">
+            </div>
+            
+            <div class="form-group">
+                <label for="admin-password">Admin (this user) Password:</label>
+                <input type="password" id="admin-password">
+            </div>
+            
+            <div class="actions">
+                <button class="btn">Send</button>
+                <button class="btn">Cancel</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

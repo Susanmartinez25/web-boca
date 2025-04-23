@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoBoca - Languages</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">ProyectoBoca</div>
+            <div class="user-info">
+                <span class="username">Administrator</span>
+                <span class="user-type">(Admin)</span>
+                <button class="logout-btn" id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="contest.html">Contest</a></li>
+            <li><a href="site.html">Site</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <li class="active"><a href="languages.html">Languages</a></li>
+            <li><a href="answer.html">Answer</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="options.html">Options</a></li>
+            <li><a href="export.html">Export</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="card">
+            <div class="card-title">Gestión de Lenguajes</div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Language #</th>
+                            <th>Name</th>
+                            <th>Extension</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>C++</td>
+                            <td>CPP</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Java</td>
+                            <td>JAVA</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>C++11</td>
+                            <td>CC</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="warning">
+                WARNING: Deleting a language will remove everything related to it.<br>
+                It is NOT recommended to change anything while the contest is running.
+            </div>
+            
+            <div class="card-title">Añadir/Editar Lenguaje</div>
+            
+            <div class="form-group">
+                <label for="language-number">Number:</label>
+                <input type="number" id="language-number">
+            </div>
+            
+            <div class="form-group">
+                <label for="language-name">Name:</label>
+                <input type="text" id="language-name">
+            </div>
+            
+            <div class="form-group">
+                <label for="language-extension">Extension:</label>
+                <input type="text" id="language-extension">
+            </div>
+            
+            <div class="actions">
+                <button class="btn">Send</button>
+                <button class="btn">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
