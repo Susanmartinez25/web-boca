@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoBoca - Answer</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">ProyectoBoca</div>
+            <div class="user-info">
+                <span class="username">Administrator</span>
+                <span class="user-type">(Admin)</span>
+                <button class="logout-btn" id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="contest.html">Contest</a></li>
+            <li><a href="site.html">Site</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li class="active"><a href="answer.html">Answer</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="options.html">Options</a></li>
+            <li><a href="export.html">Export</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="card">
+            <div class="card-title">Gestión de Respuestas</div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Answer #</th>
+                            <th>Description</th>
+                            <th>Yes/No</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0 (fake)</td>
+                            <td>Not answered yet</td>
+                            <td>No</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>YES</td>
+                            <td>Yes</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>NO - Compilation error</td>
+                            <td>No</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>NO - Runtime error</td>
+                            <td>No</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>NO - Time limit exceeded</td>
+                            <td>No</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>NO - Presentation error</td>
+                            <td>No</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>NO - Wrong answer</td>
+                            <td>No</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>NO - If possible, contact staff</td>
+                            <td>No</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="warning">
+                TASK CARE: deleting an answer will remove everything related to it (ALSO IN OTHER TABLES!!).<br>
+                It is NOT recommended to change anything while the contest is running.
+            </div>
+            
+            <div class="card-title">Añadir/Editar Respuesta</div>
+            
+            <div class="form-group">
+                <label for="answer-number">Number:</label>
+                <input type="number" id="answer-number">
+            </div>
+            
+            <div class="form-group">
+                <label for="answer-description">Description:</label>
+                <input type="text" id="answer-description">
+            </div>
+            
+            <div class="form-group">
+                <label for="answer-type">Type:</label>
+                <select id="answer-type">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            
+            <div class="actions">
+                <button class="btn">Send</button>
+                <button class="btn">Cancel</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

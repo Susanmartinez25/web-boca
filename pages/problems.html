@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoBoca - Problems</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">ProyectoBoca</div>
+            <div class="user-info">
+                <span class="username">Administrator</span>
+                <span class="user-type">(Admin)</span>
+                <button class="logout-btn" id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="contest.html">Contest</a></li>
+            <li><a href="site.html">Site</a></li>
+            <li class="active"><a href="problems.html">Problems</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="answer.html">Answer</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="options.html">Options</a></li>
+            <li><a href="export.html">Export</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="card">
+            <div class="card-title">Gestión de Problemas</div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Problem #</th>
+                            <th>Short Name</th>
+                            <th>Fullname</th>
+                            <th>Basename</th>
+                            <th>Color</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0 (fake)</td>
+                            <td>General</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="warning">
+                WARNING: Deleting a problem will remove everything related to it.<br>
+                It is NOT recommended to change anything while the contest is running.
+            </div>
+            
+            <div class="card-title">Importar Problema</div>
+            
+            <div class="form-group">
+                <label for="problem-number">Number:</label>
+                <input type="number" id="problem-number">
+            </div>
+            
+            <div class="form-group">
+                <label for="short-name">Short Name (usually a letter, no spaces):</label>
+                <input type="text" id="short-name">
+            </div>
+            
+            <div class="form-group">
+                <label for="problem-package">Problem package (ZIP):</label>
+                <input type="file" id="problem-package">
+            </div>
+            
+            <div class="form-group">
+                <label for="color-name">Color name:</label>
+                <input type="text" id="color-name">
+            </div>
+            
+            <div class="form-group">
+                <label for="color-rgb">Color (RGB HTML format):</label>
+                <input type="text" id="color-rgb" placeholder="#RRGGBB">
+            </div>
+            
+            <div class="actions">
+                <button class="btn">Send</button>
+                <button class="btn">Clear</button>
+            </div>
+            
+            <p>To build a problem package from files, use this link: <a href="#" class="btn-link">BUILD</a></p>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

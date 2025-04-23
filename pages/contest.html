@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoBoca - Contest</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">ProyectoBoca</div>
+            <div class="user-info">
+                <span class="username">Administrator</span>
+                <span class="user-type">(Admin)</span>
+                <button class="logout-btn" id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-menu">
+            <li class="active"><a href="contest.html">Contest</a></li>
+            <li><a href="site.html">Site</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="answer.html">Answer</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="options.html">Options</a></li>
+            <li><a href="export.html">Export</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="card">
+            <div class="card-title">Configuración del Concurso</div>
+            
+            <div class="form-group">
+                <label for="contest-number">Contest number:</label>
+                <input type="text" id="contest-number" value="6" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label for="contest-name">Name:</label>
+                <input type="text" id="contest-name" value="Context">
+            </div>
+            
+            <div class="form-group">
+                <label>Start date:</label>
+                <div class="date-inputs">
+                    <input type="text" placeholder="hh" value="15" style="width: 50px;">
+                    <span>:</span>
+                    <input type="text" placeholder="mm" value="13" style="width: 50px;">
+                    <input type="text" placeholder="dd" value="24" style="width: 50px;">/
+                    <input type="text" placeholder="mm" value="03" style="width: 50px;">/
+                    <input type="text" placeholder="yyyy" value="2025" style="width: 80px;">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="duration">Duration (in minutes):</label>
+                <input type="number" id="duration" value="82522">
+            </div>
+            
+            <div class="form-group">
+                <label for="stop-answering">Stop answering (in minutes):</label>
+                <input type="number" id="stop-answering" value="285">
+            </div>
+            
+            <div class="form-group">
+                <label for="stop-scoreboard">Stop scoreboard (in minutes):</label>
+                <input type="number" id="stop-scoreboard" value="240">
+            </div>
+            
+            <div class="form-group">
+                <label for="penalty">Penalty (in minutes):</label>
+                <input type="number" id="penalty" value="20">
+            </div>
+            
+            <div class="form-group">
+                <label for="max-file-size">Max file size allowed for teams (in KB):</label>
+                <input type="number" id="max-file-size" value="0">
+                <p class="hint">Your PHP config. allows at most: 4008(max, post) and 4008(max, filesize)</p>
+                <p class="hint">14108 of session expiration and 0 as cookie lifetime (0 means unlimited)</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="main-url">Main site URL (IP/bocafolder):</label>
+                <input type="text" id="main-url">
+            </div>
+            
+            <div class="form-group">
+                <label for="unlock-password">Unlock password (only use it within a secure network):</label>
+                <input type="password" id="unlock-password">
+            </div>
+            
+            <div class="form-group">
+                <label for="contest-keys">Keys (only use it within a secure network):</label>
+                <input type="file" id="contest-keys">
+            </div>
+            
+            <div class="form-group">
+                <label for="main-site-number">Contest main site number:</label>
+                <input type="text" id="main-site-number">
+            </div>
+            
+            <div class="form-group">
+                <label for="local-site-number">Contest local site number:</label>
+                <input type="text" id="local-site-number">
+            </div>
+            
+            <div class="actions">
+                <button class="btn">Update</button>
+                <button class="btn">Update Contest and All Sites</button>
+                <button class="btn">Clear</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

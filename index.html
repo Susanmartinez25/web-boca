@@ -1,0 +1,111 @@
+<!-- Declaración del tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+<!-- Elemento raíz del documento con idioma español -->
+<html lang="es">
+
+<head>
+    <!-- Codificación de caracteres en UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Vista adaptable para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título que se muestra en la pestaña del navegador -->
+    <title>ProyectoBoca - Inicio</title>
+    
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Contenedor del menú -->
+<div id="menu-container"></div>
+
+<!-- Script que lo carga -->
+<script src="../js/loadNav.js"></script>
+
+   
+  
+    <!-- Encabezado principal de la página -->
+    <header>
+        <div class="header-container">
+            <!-- Nombre del proyecto o logo -->
+            <div class="logo">ProyectoBoca</div>
+            
+            <!-- Información del usuario logueado -->
+            <div class="user-info">
+                <span class="username">Administrator</span>  <!-- Nombre del usuario -->
+                <span class="user-type">(Admin)</span>       <!-- Rol del usuario -->
+            </div>
+        </div>
+    </header>
+    
+    <!-- Menú de navegación principal -->
+    <nav>
+        <ul class="nav-menu">
+            <!-- Cada elemento es un enlace a una sección del sistema -->
+            <li><a href="pages/contest.html">Contest</a></li>
+            <li><a href="pages/site.html">Site</a></li>
+            <li><a href="pages/problems.html">Problems</a></li>
+            <li><a href="pages/languages.html">Languages</a></li>
+            <li><a href="pages/answer.html">Answer</a></li>
+            <li><a href="pages/users.html">Users</a></li>
+            <li><a href="pages/reports.html">Reports</a></li>
+            <li><a href="pages/options.html">Options</a></li>
+            <li><a href="pages/export.html">Export</a></li>
+            <li><a href="pages/export.html">Export</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contenido principal de la página -->
+    <main>
+        <div class="dashboard">
+            <!-- Título del panel principal -->
+            <h1>Panel de Administración</h1>
+            
+            <!-- Instrucciones básicas al usuario -->
+            <p>Seleccione una opción del menú superior para comenzar.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="logo-boca">
+                    <img src="login/images/boca.png.png" alt="Logo BOCA" style="height: 100px;">
+                </div>
+            </div>
+    
+            <div class="footer-center">
+                <ul>
+                    <li><a href="#">Información Legal</a></li>
+                    <li><a href="#">Acerca de Boca</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <p>Síguenos en redes sociales</p>
+                <div class="social-icons">
+                    <a href="#"><img src="img/facebook.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="img/x.png" alt="X"></a>
+                    <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 Proyectoboca</p>
+        </div>
+    </footer>
+    
+
+    <!-- Enlace al archivo JavaScript principal -->
+    <script src="js/main.js"></script>
+    
+      <!-- jQuery desde CDN -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
